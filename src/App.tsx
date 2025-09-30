@@ -6,7 +6,7 @@ export default function App() {
 
     useEffect(() => {
         async function fetchData() {
-            const rawData = await fetch("https://potterapi-fedeperin.vercel.app/en/characters?max=20");
+            const rawData = await fetch("https://potterapi-fedeperin.vercel.app/en/characters");
             const actualData = await rawData.json();
             setData(actualData);
         }
